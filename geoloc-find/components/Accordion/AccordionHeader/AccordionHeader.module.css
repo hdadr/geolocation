@@ -1,0 +1,52 @@
+.container {
+  display: grid;
+  grid-template-columns: 0.4fr 1.1fr 1fr 0.4fr;
+  grid-template-rows: 0.5fr;
+  grid-auto-columns: 1fr;
+  gap: 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "serial datetime map dropdown";
+  padding: 1rem;
+  color: rgba(255, 255, 255, 0.87);
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.serial {
+  grid-area: serial;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 0.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.datetime {
+  grid-area: datetime;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.map {
+  grid-area: map;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  grid-area: dropdown;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+  padding-right: 0.5rem;
+}
+
+.country {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
