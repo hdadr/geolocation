@@ -1,6 +1,8 @@
 # Geolocation sharing, and presenting 
 PWA apps made using NEXT.JS, Firebase and openstreetmap.
 
+Context: This app was made for using as tracking the location of the device/person sharing it with other people (for eg. on hike share the location with family). 
+
 There are two separate apps in this repo.
 - ***Geolocation-share:*** gets the device locations info (GeoLocation API) which can be stored in Firestore by user. When the device is offline, it stores the location info in the local storage and next time the device gets online it uploads all the infos. [Geolocation-share](https://gl-share.vercel.app/)
 - ***Geolocation-find:*** It presents the stored locations in a list and on the map. [Geolocation-find](https://gl-find.vercel.app/)
