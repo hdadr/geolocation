@@ -31,16 +31,14 @@ const LocationMap = ({ locations, selectedLocationId, setSelectedLocationId }: P
   }, [selectedLocationId]);
 
   return (
-    <div className={styles.container}>
-      <MapContainer center={center} zoom={11} style={{ height: "300px", borderRadius: "16px" }}>
-        <RecenterMap center={center} />
-        <TileLayer
-          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        <Markers setSelectedLocationId={setSelectedLocationId} locations={locations} selectedLocationId={selectedLocationId} />
-      </MapContainer>
-    </div>
+    <MapContainer center={center} zoom={11} className={styles.map}>
+      <RecenterMap center={center} />
+      <TileLayer
+        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      <Markers setSelectedLocationId={setSelectedLocationId} locations={locations} selectedLocationId={selectedLocationId} />
+    </MapContainer>
   );
 };
 

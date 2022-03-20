@@ -1,6 +1,5 @@
-.container {
+.map {
   height: 300px;
-  min-height: 300px;
-  max-width: 600px;
-  min-width: 400px;
+  border-radius: 16px;
+  width: 100%;
 }
